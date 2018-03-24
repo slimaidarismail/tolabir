@@ -140,4 +140,4 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/assets/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "assets")
 
-STATIC_ROOT = '/www/data/www.tolabir.com/spam/assets'
+STATIC_ROOT = '/root/tolabir/assets'
