@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <meta http-equiv="Refresh" content="3;url={% url 'result' id %}">
+        <div class="main">
+        <div class="content">
+            <div class="left" style="width:70%;float: left;">
+                <div class="ccleft" style="margin: 0px 5px 0px 20px;">
+                    <h2> حساب النتائج...</h2>
+                    <div class="cleft">
+                        <div class="quina" style="margin-bottom: 40px">
+                            <img src="https://media.giphy.com/media/7eygrJEkHFHEY/giphy.gif" alt="Loading" width="50%">
+                        </div>
+                        <div style="font-weight: bold;
+                                    font-size: 15px;
+                                    margin-top: 5px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ccright" style="width: 30%;float: left;">
+                <div style="background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    margin: 0px 20px 0px 10px;
+    padding: 20px 0px;text-align: center;">
+                    <div style="height: 600px;overflow: hidden;">
+
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="in">
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

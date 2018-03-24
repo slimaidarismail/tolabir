@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+<div class="main">
+
+        <div class="content">
+            <div class="in">
+                {% for test in tests %}
+                    <div class="app">
+                        <a href="{% url 'single-test' test.id %}" style="background: url('{{ test.picture.url }}');" class="appbox">
+                            <div class="overlay"></div>
+                            <div class="titcon">
+                                <span class="apptit">{{ test.title }}</span>
+                            </div>
+                            <span class="callto">! هيا بنا<img src="{% static 'img/next.png' %}" class="nxt"></span>
+                        </a>
+                    </div>
+                {% endfor %}
+                <div class="show_more_main" id="show_more_main707">
+                    <p>Navigation links</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

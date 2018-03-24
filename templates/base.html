@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
+<head>
+    {% load static %}
+    <title>تلابر - اختبارات شخصية</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <meta property="fb:app_id" content="966219863475707"/>
+    <meta property="og:site_name" content="tolabir.com"/>
+    <meta property="og:title" content="تلابر - اختبارات شخصية"/>
+    <meta property="og:description" content="تلابر - اختبارات شخصية"/>
+    <meta property="og:type" content="website"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+{#<script>#}
+{#  window.fbAsyncInit = function() {#}
+{#    FB.init({#}
+{#      appId      : '1962476784003081',#}
+{#      cookie     : true,#}
+{#      xfbml      : true,#}
+{#      version    : '{latest-api-version}'#}
+{#    });#}
+{##}
+{#    FB.AppEvents.logPageView();#}
+{##}
+{#  };#}
+{##}
+{#  (function(d, s, id){#}
+{#     var js, fjs = d.getElementsByTagName(s)[0];#}
+{#     if (d.getElementById(id)) {return;}#}
+{#     js = d.createElement(s); js.id = id;#}
+{#     js.src = "https://connect.facebook.net/en_US/sdk.js";#}
+{#     fjs.parentNode.insertBefore(js, fjs);#}
+{#   }(document, 'script', 'facebook-jssdk'));#}
+{#</script>#}
+<div class="fida">
+    <div class="nav">
+        <div class="insidenav">
+            <a href="/" class="logo">
+                <img src="{% static 'img/logo.png' %}" class="normal">
+                <img src="{% static 'img/slogo.png' %}" class="small">
+            </a>
+            <div class="fbimg" >
+                {% if user.username %}
+                    {{ user.username }}
+                {% endif %}
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <div class="footer">
+        <a href="privacy.html" style="margin-right: 0px">Privacy and policy
+        </a>/
+        <a href="disclaimer.html" style="margin-right: 0px">Disclaimer
+        </a>
+
+        <span style="color: rgba(255,255,255,.5);margin-top: 13px;font-size: 12px;display: block;">Read Disclaimer and Privacy policy please before using the website.</span>
+    </div>
+</div>

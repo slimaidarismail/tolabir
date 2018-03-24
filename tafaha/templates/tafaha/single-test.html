@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+        {% if not test.id %}
+            <h1>No test found</h1><h1>No test found</h1><h1>No test found</h1><h1>No test found</h1>
+               <meta http-equiv="Refresh" content="1;url={% url 'home_page' %}">
+        {% endif %}
+        <div class="main">
+        <div class="content">
+            <div class="left" style="width:70%;float: left;">
+                <div class="ccleft" style="margin: 0px 5px 0px 20px;">
+                    <h2> {{ test.title }}</h2>
+                    <div class="cleft" id="root">
+                        <div class="quina" style="margin-bottom: 40px">
+                            <img src="{{ test.picture.url }}" class="iquiz">
+                        </div>
+                        <div style="font-weight: bold;
+                                    font-size: 15px;
+                                    margin-top: 5px;"></div>
+                        {% if user.username %}
+                            <form action="{% url 'result' test.id %}" method="post">
+                            {% csrf_token %}
+                                <input type="submit" value="قم بالإختبار الآن" style="font-size:1.5em;padding: 1em; background-color: #3B5998; color: white;text-decoration: none">
+                            </form>
+                        {% else %}
+                            <a href="{% url 'social:begin' 'facebook' %}?next={{request.path}}">Login with fb</a>
+                        {% endif %}
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ccright" style="width: 30%;float: left;">
+                <div style="background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    margin: 0px 20px 0px 10px;
+    padding: 20px 0px;text-align: center;">
+                    <div style="height: 600px;overflow: hidden;">
+
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="in">
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
