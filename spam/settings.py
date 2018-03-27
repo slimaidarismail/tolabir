@@ -109,11 +109,11 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookOAuth2',
 )
 
-SOCIAL_AUTH_FACEBOOK_KEY = "1962476784003081"
-SOCIAL_AUTH_FACEBOOK_SECRET = "370e37b8247b9b3e8fe72a3100a5566c"
+SOCIAL_AUTH_FACEBOOK_KEY = "712070795583823"
+SOCIAL_AUTH_FACEBOOK_SECRET = "03a18d949f8d998885f72528fa88ba71"
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email','public_profile']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'id, name, email, age_range, picture, location'
+    'fields': 'id, name, email, age_range, picture'
 }
 
 # Internationalization
