@@ -26,6 +26,10 @@ class Answer(models.Model):
     def __str__(self):
         return "Choice for : {}".format(self.test)
 
+class Result(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    choice = models.ImageField(null=False)
+
 
 class UserProfile(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
