@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6da754f-6e09-4cbd-a04c-83ae8f923f57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tafaha/views.py" afterPath="$PROJECT_DIR$/tafaha/views.py" />
+      <change beforePath="$PROJECT_DIR$/spam/settings.py" afterPath="$PROJECT_DIR$/spam/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +28,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tafaha/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -42,11 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spam/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="104" column="63" lean-forward="false" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
+            <state relative-caret-position="374">
+              <caret line="103" column="43" lean-forward="false" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -124,8 +134,8 @@
         <option value="$PROJECT_DIR$/tafaha/templates/tafaha/result.html" />
         <option value="$PROJECT_DIR$/tafaha/tafaha.pipline" />
         <option value="$PROJECT_DIR$/tafaha/models.py" />
-        <option value="$PROJECT_DIR$/spam/settings.py" />
         <option value="$PROJECT_DIR$/tafaha/views.py" />
+        <option value="$PROJECT_DIR$/spam/settings.py" />
       </list>
     </option>
   </component>
@@ -173,6 +183,11 @@
               <item name="sample-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="sample-project" type="462c0819:PsiDirectoryNode" />
               <item name="tafaha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sample-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sample-project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -522,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tafaha/templates/tafaha/single-test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -570,14 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spam/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="104" column="63" lean-forward="false" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tafaha/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -587,6 +587,22 @@
             <element signature="e#519#825#0" expanded="false" />
             <element signature="e#852#977#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spam/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="103" column="43" lean-forward="false" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
