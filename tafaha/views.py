@@ -4,7 +4,6 @@ from .models import Test, Answer
 from random import randint
 import time
 from .models import UserProfile
-from __future__ import print_function
 import os
 import urllib
 from PIL import Image

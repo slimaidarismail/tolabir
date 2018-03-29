@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6da754f-6e09-4cbd-a04c-83ae8f923f57" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/spam/settings.py" afterPath="$PROJECT_DIR$/spam/settings.py" />
-      <change beforePath="$PROJECT_DIR$/tafaha/models.py" afterPath="$PROJECT_DIR$/tafaha/models.py" />
       <change beforePath="$PROJECT_DIR$/tafaha/views.py" afterPath="$PROJECT_DIR$/tafaha/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,22 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tafaha/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#360#527#0" expanded="false" />
-                <element signature="e#557#863#0" expanded="false" />
-                <element signature="e#890#1015#0" expanded="false" />
+                <element signature="e#322#489#0" expanded="false" />
+                <element signature="e#519#825#0" expanded="false" />
+                <element signature="e#852#977#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spam/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -128,8 +124,8 @@
         <option value="$PROJECT_DIR$/tafaha/templates/tafaha/result.html" />
         <option value="$PROJECT_DIR$/tafaha/tafaha.pipline" />
         <option value="$PROJECT_DIR$/tafaha/models.py" />
-        <option value="$PROJECT_DIR$/tafaha/views.py" />
         <option value="$PROJECT_DIR$/spam/settings.py" />
+        <option value="$PROJECT_DIR$/tafaha/views.py" />
       </list>
     </option>
   </component>
@@ -574,24 +570,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tafaha/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#360#527#0" expanded="false" />
-            <element signature="e#557#863#0" expanded="false" />
-            <element signature="e#890#1015#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spam/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="104" column="63" lean-forward="false" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tafaha/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#322#489#0" expanded="false" />
+            <element signature="e#519#825#0" expanded="false" />
+            <element signature="e#852#977#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
