@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6da754f-6e09-4cbd-a04c-83ae8f923f57" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/spam/settings.py" afterPath="$PROJECT_DIR$/spam/settings.py" />
-      <change beforePath="$PROJECT_DIR$/tafaha/templates/tafaha/single-test.html" afterPath="$PROJECT_DIR$/tafaha/templates/tafaha/single-test.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,8 +55,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spam/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="794">
+              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -615,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spam/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="794">
+          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding />
         </state>
       </provider>
