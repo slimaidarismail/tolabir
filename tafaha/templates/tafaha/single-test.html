@@ -24,7 +24,6 @@
                                 <input type="submit" value="قم بالإختبار الآن" style="font-size:1.5em;padding: 1em; background-color: #3B5998; color: white;text-decoration: none">
                             </form>
                         {% else %}
-                            <a href="{% url 'social:begin' 'facebook' %}?next={{request.path}}">Login with fb</a>
                             <div class="fb-login-button" data-width="100" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="true" data-auto-logout-link="false" data-use-continue-as="true"></div>
                         {% endif %}
 
