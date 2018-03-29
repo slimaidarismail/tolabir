@@ -15,7 +15,7 @@ SECRET_KEY = '81_v_8xq*77k0@z80+qnaxau&z$jj_=k$vn458+a9ubeim#74o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['167.99.196.150','127.0.0.1','localhost',]
+ALLOWED_HOSTS = ['167.99.196.150','127.0.0.1','localhost','tolabir.com']
 
 
 # Application definition
