@@ -25,7 +25,7 @@ SECRET_KEY = '81_v_8xq*77k0@z80+qnaxau&z$jj_=k$vn458+a9ubeim#74o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['167.99.93.20','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['167.99.93.20','127.0.0.1','localhost',]
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'tafaha',
+    'sslserver',
+
 ]
 
 MIDDLEWARE = [
@@ -51,6 +53,19 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
+
+SOCIAL_AUTH_PIPELINE = (
+    'social.pipeline.social_auth.social_details',
+    'social.pipeline.social_auth.social_uid',
+    'social.pipeline.social_auth.auth_allowed',
+    'social.pipeline.social_auth.social_user',
+    'social.pipeline.user.get_username',
+    'social.pipeline.user.create_user',
+    'social.pipeline.social_auth.associate_user',
+    'social.pipeline.social_auth.load_extra_data',
+    'social.pipeline.user.user_details',
+    'tafaha.pipeline.save_profile',
+)
 
 ROOT_URLCONF = 'spam.urls'
 
@@ -111,9 +126,9 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_FACEBOOK_KEY = "712070795583823"
 SOCIAL_AUTH_FACEBOOK_SECRET = "03a18d949f8d998885f72528fa88ba71"
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email','public_profile']
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'public_profile', 'avatar']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'id, name, email, age_range, picture'
+    'fields': 'id, name, email, picture'
 }
 
 # Internationalization
@@ -140,4 +155,4 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/assets/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "assets")
 
-STATIC_ROOT = '/root/tolabir/assets'
+#STATIC_ROOT = '/root/tolabir/assets'

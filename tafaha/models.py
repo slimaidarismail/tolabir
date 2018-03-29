@@ -1,7 +1,7 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
-from spam.settings import STATIC_URL
 
 
 class Test(models.Model):
@@ -25,3 +25,8 @@ class Answer(models.Model):
 
     def __str__(self):
         return "Choice for : {}".format(self.test)
+
+
+class UserProfile(models.Model):
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    avatar = models.ImageField(upload_to="img/users")

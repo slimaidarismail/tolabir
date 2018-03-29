@@ -1,0 +1,8 @@
+from .models import UserProfile
+
+def save_profile(backend, user, response, *args, **kwargs):
+    if backend.name == "facebook":
+        UserProfile.objects.create(
+            user=user,
+            photo_url=response['user']['picture']
+        )

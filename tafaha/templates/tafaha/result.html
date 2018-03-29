@@ -9,12 +9,13 @@
                     <h2> {{ test.title }}</h2>
                     <div class="cleft" id="root">
                         <div class="quina" style="margin-bottom: 40px">
-                            <img src="{% static 'img/tafaha/' %}{{ img }}.jpg" alt="" width="90%">
+                            <img src="{% static 'img/tafaha/' %}{{ img }}.jpg" alt="" width="10%">
+                            {{ user.first_name }} {{ user.avatar }}
                         </div>
                         <div style="font-weight: bold;
                                     font-size: 15px;
                                     margin-top: 5px;"></div>
-                        {% if user.username %}
+                        {% if user %}
                             <input type="submit" value="شارك على فايسبوك" style="font-size:1.5em;padding: 1em; background-color: #3B5998; color: white;text-decoration: none">
                         {% else %}
                             <meta http-equiv="Refresh" content="1;url={% url 'home_page' %}">
