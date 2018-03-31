@@ -146,6 +146,9 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
