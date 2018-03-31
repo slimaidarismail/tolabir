@@ -11,8 +11,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tests/', include('tafaha.urls')),
     path('', tafaha.views.Home.as_view(), name="home"),
-    path('auth/social', Home.as_view(), name="auth-social"),
-    path('auth-social', include('social_django.urls', namespace="social")),
+    # path('auth/social', Home.as_view(), name="auth-social"),
+    # path('auth-social', include('social_django.urls', namespace="social")),
+    path('accounts/', include('allauth.urls')),
+
     path('', Home.as_view(), name="logout")
 
 ]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
