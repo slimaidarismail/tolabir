@@ -18,4 +18,4 @@ urlpatterns = [
 
 urlpatterns += staticfiles_urlpatterns()
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = "https://tolabir.com"
