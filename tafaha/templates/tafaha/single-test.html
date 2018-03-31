@@ -24,7 +24,9 @@
                                 <input type="submit" value="قم بالإختبار الآن" style="font-size:1.5em;padding: 1em; background-color: #3B5998; color: white;text-decoration: none">
                             </form>
                         {% else %}
-
+                            {% load socialaccount %}
+                            {% providers_media_js %}
+                            <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>
                         {% endif %}
 
                         </a>
