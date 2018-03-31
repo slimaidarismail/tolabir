@@ -106,17 +106,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'social_core.backends.facebook.FacebookOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
+    # 'social_core.backends.facebook.FacebookOAuth2',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SOCIAL_AUTH_FACEBOOK_KEY = "712070795583823"
-SOCIAL_AUTH_FACEBOOK_SECRET = "03a18d949f8d998885f72528fa88ba71"
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'public_profile', 'avatar']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'fields': 'id, name, email, picture'
-}
+# SOCIAL_AUTH_FACEBOOK_KEY = "712070795583823"
+# SOCIAL_AUTH_FACEBOOK_SECRET = "03a18d949f8d998885f72528fa88ba71"
+# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'public_profile', 'avatar']
+# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+#     'fields': 'id, name, email, picture'
+# }
 
 
 SOCIALACCOUNT_PROVIDERS = {
