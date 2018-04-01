@@ -139,7 +139,7 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'EXCHANGE_TOKEN': True,
         'VERIFIED_EMAIL': False,
-        'VERSION': 'v2.2',
+        'VERSION': 'v2.12',
     }
 }
 
