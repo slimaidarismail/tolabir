@@ -139,17 +139,11 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'EXCHANGE_TOKEN': True,
         'VERIFIED_EMAIL': False,
-        'VERSION': 'v2.12',
+        'VERSION': 'v2.2',
     }
 }
 
 
-
-SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/2.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
