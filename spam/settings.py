@@ -120,7 +120,7 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIALACCOUNT_PROVIDERS = {
     'facebook': {
-        'METHOD': 'js_sdk',
+        'METHOD': 'oauth2',
         'SCOPE': ['email', 'public_profile'],
         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
         'INIT_PARAMS': {'cookie': True},
@@ -138,9 +138,6 @@ SOCIALACCOUNT_PROVIDERS = {
             'updated_time',
         ],
         'EXCHANGE_TOKEN': True,
-        'facebook': {
-                'LOCALE_FUNC': lambda request: 'en_US'
-            },
         'VERIFIED_EMAIL': False,
         'VERSION': 'v2.12',
     }
