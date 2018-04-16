@@ -1,5 +1,8 @@
 from django.contrib.auth import logout
+from django.contrib.auth.models import User
 from django.shortcuts import render
+
+from spam.settings import BASE_DIR
 from .models import Test, Answer
 from random import randint
 import time
@@ -19,6 +22,14 @@ class Home(View):
     def get(self, request):
         tests = Test.objects.order_by('id')
         return render(request, 'tafaha/home.html',{'tests':tests})
+
+class Logout(View):
+    template_name = 'logout'
+
+    def post(self, request):
+        logout(request)
+        return render(request, 'tafaha/home.html')
+
 
 class SingleTest(View):
     template_name = "single-test"
@@ -41,11 +52,16 @@ class Result(View):
     template_name = "result"
 
     def post(self, request , id):
-
         test = Test.objects.get(id=id)
+        user = request.user
+
         #get user picture
-        f = open("img/profile/"+request.user.id+'profile.jpg', 'wb')  # create file locally
-        img_url = 'http://graph.facebook.com/'+request.user.UID+'/picture?type=large&width=400'
+        social = user.social_auth.get(provider='facebook')
+        userid = social.uid
+
+        # create file locally
+        f = open(os.path.join(BASE_DIR, "assets/img/profile/")+str(userid)+'profile.jpg', 'wb')
+        img_url = 'http://graph.facebook.com/'+str(userid)+'/picture?type=large&width=400'
         f.write(requests.get(img_url).content)  # write image content to this file
         f.close()
 
@@ -53,9 +69,10 @@ class Result(View):
         choice = Answer.objects.filter(test=test).order_by('?').first()
 
         #save the resault
+        img_name = str(choice.picture.url).split('/')[4]
         files = [
-            choice.picture,
-            "img/profile/"+request.user.id+'profile.jpg',
+            os.path.join(BASE_DIR, "assets/img/tafaha/") + str(img_name),
+            os.path.join(BASE_DIR, "assets/img/profile/")+str(userid)+'profile.jpg',
         ]
         result = Image.new("RGB", (800, 420))
         i = True
@@ -73,9 +90,8 @@ class Result(View):
             w, h = img.size
             result.paste(img, (x, y, x + w, y + h))
 
-        result.save(os.path.expanduser('img/resaults/'+request.user.UID+id+'.jpg'))
+        result.save(os.path.join(BASE_DIR, "assets/img/results/")+str(userid)+str(test.id)+'.jpg')
+        result_image_url = "img/results/"+str(userid)+str(test.id)+'.jpg'
 
-
-
-        return render(request, 'tafaha/result.html')
+        return render(request, 'tafaha/result.html', {'result': result_image_url})
 

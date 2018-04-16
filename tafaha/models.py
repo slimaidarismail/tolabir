@@ -32,5 +32,6 @@ class Result(models.Model):
 
 
 class UserProfile(models.Model):
-    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     avatar = models.ImageField(upload_to="img/users")
+

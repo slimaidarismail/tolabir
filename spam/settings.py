@@ -15,7 +15,7 @@ SECRET_KEY = '81_v_8xq*77k0@z80+qnaxau&z$jj_=k$vn458+a9ubeim#74o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['167.99.196.150','127.0.0.1','localhost','tolabir.com']
+ALLOWED_HOSTS = ['178.62.43.45','127.0.0.1','localhost','tolabir.com']
 
 
 # Application definition
@@ -27,17 +27,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
-    'social_django',
     'tafaha',
+    'social_django',
     "sslserver",
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
 ]
 
-SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -106,43 +100,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    # 'social_core.backends.facebook.FacebookOAuth2',
-    'allauth.account.auth_backends.AuthenticationBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
 )
 
-# SOCIAL_AUTH_FACEBOOK_KEY = "712070795583823"
-# SOCIAL_AUTH_FACEBOOK_SECRET = "03a18d949f8d998885f72528fa88ba71"
-# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'public_profile', 'avatar']
-# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-#     'fields': 'id, name, email, picture'
-# }
-
-
-SOCIALACCOUNT_PROVIDERS = {
-    'facebook': {
-        'METHOD': 'oauth2',
-        'SCOPE': ['email', 'public_profile'],
-        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
-        'INIT_PARAMS': {'cookie': True},
-        'FIELDS': [
-            'id',
-            'email',
-            'name',
-            'first_name',
-            'last_name',
-            'verified',
-            'locale',
-            'timezone',
-            'link',
-            'gender',
-            'updated_time',
-        ],
-        'EXCHANGE_TOKEN': True,
-        'VERIFIED_EMAIL': False,
-        'VERSION': 'v2.12',
-    }
+SOCIAL_AUTH_FACEBOOK_KEY = "1630631967016503"
+SOCIAL_AUTH_FACEBOOK_SECRET = "c13ef9a557963a66a9c785ea761e0a9d"
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'public_profile']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id, name, email, picture'
 }
-
 
 
 LANGUAGE_CODE = 'en-us'

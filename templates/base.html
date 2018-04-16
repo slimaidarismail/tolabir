@@ -32,7 +32,11 @@
             </a>
             <div class="fbimg" >
                 {% if user.username %}
-                    {{ user.username }}
+                    {{ user.first_name }} {{ user.last_name }} {{ user.profile_photo }}
+                    <form action="{% url "logout" %}" method="post">
+                    {% csrf_token %}
+                        <input type="submit" value="logout">
+                    </form>
                 {% endif %}
             </div>
             <div class="clear"></div>
@@ -42,9 +46,9 @@
     {% block content %} {% endblock %}
 
     <div class="footer">
-        <a href="privacy.html" style="margin-right: 0px">Privacy and policy
+        <a href="{% url 'privacy' %}" style="margin-right: 0px">Privacy and policy
         </a>/
-        <a href="disclaimer.html" style="margin-right: 0px">Disclaimer
+        <a href="{% url 'declaimer' %}" style="margin-right: 0px">Disclaimer
         </a>
 
         <span style="color: rgba(255,255,255,.5);margin-top: 13px;font-size: 12px;display: block;">Read Disclaimer and Privacy policy please before using tolabir.com.</span>

@@ -11,3 +11,9 @@ class Home(View):
 
     def post(self, request):
         logout(request)
+
+def privacy(request):
+    return render(request, 'privacy.html')
+
+def declaimer(request):
+    return render(request, 'declaimer.html')
